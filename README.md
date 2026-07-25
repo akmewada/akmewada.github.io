@@ -1,7 +1,7 @@
-# Academic website — Lokesh Kumar, PhD
+# Academic website — A. Kmewada, PhD
 
-Static personal/academic site for [GitHub Pages](https://physicistlk.github.io/).
+Static personal/academic site for [GitHub Pages](https://akmewada.github.io/).
 
 ## Live site
 
-https://physicistlk.github.io/
+https://akmewada.github.io/
