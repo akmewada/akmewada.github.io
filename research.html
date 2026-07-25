@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research | Dr. Arvind Mewada</title>
+  <meta name="description" content="Research highlights in NLP, fake review detection, machine learning, computer vision, and blockchain by Dr. Arvind Mewada.">
+  <meta name="author" content="Arvind Mewada">
+  <meta name="theme-color" content="#131315">
+  <meta property="og:title" content="Research | Dr. Arvind Mewada">
+  <meta property="og:description" content="Breakthroughs in NLP, fake review detection, computer vision, and blockchain.">
+  <meta property="og:image" content="assets/lab.jpg">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <script>
+    (function () {
+      var t = localStorage.getItem("color-theme");
+      if (t === "dark" || (!t && window.matchMedia("(prefers-color-scheme: dark)").matches)) {
+        document.documentElement.classList.add("dark");
+      }
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html">Dr. Arvind Mewada</a>
+      <div class="nav-actions">
+        <nav class="nav-links" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a href="research.html" aria-current="page">Research</a>
+          <a href="publications.html">Publications</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <button type="button" class="icon-btn" data-theme-toggle aria-label="Toggle color theme">
+          <span class="material-symbols-outlined icon-dark" aria-hidden="true">dark_mode</span>
+          <span class="material-symbols-outlined icon-light" aria-hidden="true">light_mode</span>
+        </button>
+        <a class="btn btn-primary btn-sm" href="cvmewada.pdf">Download CV</a>
+        <button type="button" class="icon-btn menu-toggle" data-menu-toggle aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="research.html" aria-current="page">Research</a>
+    <a href="publications.html">Publications</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-primary" href="cvmewada.pdf">Download CV</a>
+  </div>
+
+  <main id="main">
+    <header class="page-hero container">
+      <div style="margin-bottom:2rem;border-radius:0.75rem;overflow:hidden;border:1px solid var(--border)">
+        <img
+          src="assets/lab.jpg"
+          srcset="assets/lab-sm.jpg 800w, assets/lab.jpg 1400w"
+          sizes="(max-width: 1024px) 100vw, 1024px"
+          width="1400"
+          height="781"
+          alt="Research environment for AI and NLP"
+          style="width:100%;height:clamp(12rem,30vw,24rem);object-fit:cover">
+      </div>
+      <h1 class="display font-display">Research Highlights</h1>
+      <p class="lead">A chronological record of breakthroughs in NLP, fake review detection, machine learning, and computer vision.</p>
+    </header>
+
+    <section class="container" style="padding-bottom:5rem">
+      <div class="research-timeline">
+        <article class="milestone reveal">
+          <div class="milestone-card card">
+            <span class="badge" style="margin-bottom:0.75rem">Major Milestone</span>
+            <h3 class="card-title">ConvRoBERTa: Advanced Fake Review Detection</h3>
+            <p class="muted">
+              Developed ConvRoBERTa, a novel model combining scaled dot-product attention with sequential (textual) and non-sequential (behavioral and sentiment polarity) signals for detecting fake reviews. Demonstrated strong performance on the Yelp dataset compared to traditional single-representation methods.
+            </p>
+            <div class="meta-row">
+              <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem">science</span>
+              <span>IEEE Transactions on AI, 2026</span>
+            </div>
+          </div>
+          <span class="milestone-dot" aria-hidden="true"></span>
+          <div class="milestone-meta">
+            <span class="chip">2026</span>
+          </div>
+        </article>
+
+        <article class="milestone reveal">
+          <div class="milestone-meta">
+            <span class="chip">2025</span>
+          </div>
+          <span class="milestone-dot" aria-hidden="true"></span>
+          <div class="milestone-card card">
+            <h3 class="card-title">NRWalk2Vec-HIN: Spammer Group Detection</h3>
+            <p class="muted">
+              Constructed a heterogeneous information network of users, reviews, timestamps, and ratings, employing NRWalk2Vec embeddings and Gaussian fuzzy C-Means clustering with entropy-driven weights to detect coordinated spammer groups effectively on social media.
+            </p>
+            <div class="meta-row">
+              <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem">link</span>
+              <span>The Journal of Supercomputing, 2024</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="milestone reveal">
+          <div class="milestone-card card">
+            <h3 class="card-title">SUH-AIFRD: Hybrid Fake Reviewer Detection</h3>
+            <p class="muted">
+              Proposed a self-training-based hybrid approach combining content-based, behavioral, temporal, and relational features to improve detection accuracy of individual fake reviewers, even in scenarios with limited labeled data.
+            </p>
+            <div class="chip-row">
+              <span class="chip">Semi-supervised Learning</span>
+              <span class="chip">NLP</span>
+            </div>
+            <div class="meta-row">
+              <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem">star</span>
+              <span>Multimedia Tools and Applications, 2024</span>
+            </div>
+          </div>
+          <span class="milestone-dot" aria-hidden="true"></span>
+          <div class="milestone-meta">
+            <span class="chip">2024</span>
+          </div>
+        </article>
+
+        <article class="milestone reveal">
+          <div class="milestone-meta">
+            <span class="chip">2023</span>
+          </div>
+          <span class="milestone-dot" aria-hidden="true"></span>
+          <div class="milestone-card card">
+            <h3 class="card-title">SA-ASBA: Aspect-Based Sentiment Analysis</h3>
+            <p class="muted">
+              Developed a hybrid ABSA model incorporating transformer-based attention, dynamic word embeddings, and XGBoost classification for precise sentiment analysis across multiple product aspects.
+            </p>
+            <div class="meta-row">
+              <span class="material-symbols-outlined" aria-hidden="true" style="font-size:1rem">link</span>
+              <span>The Journal of Supercomputing, 2023</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="milestone reveal">
+          <div class="milestone-card card">
+            <h3 class="card-title">PhD Research at MNNIT Allahabad</h3>
+            <p class="muted" style="margin:0">
+              Conducted doctoral research on fake review detection, presenting an integrated framework comprising multiple novel contributions in dataset labeling, group spammer detection, and review aspect analysis.
+            </p>
+          </div>
+          <span class="milestone-dot" aria-hidden="true"></span>
+          <div class="milestone-meta">
+            <span class="chip">2018&ndash;2023</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section bg-muted">
+      <div class="container">
+        <h2 class="section-title font-headline" style="text-align:center;margin-bottom:2.5rem">Domain Expertise</h2>
+        <div class="grid-3">
+          <article class="card reveal">
+            <span class="material-symbols-outlined card-icon" aria-hidden="true">translate</span>
+            <h3 class="card-title">Natural Language Processing</h3>
+            <p class="muted" style="margin:0">Fake review detection, sentiment analysis, misinformation detection, and transformer-based models for opinion spam analysis.</p>
+          </article>
+          <article class="card reveal">
+            <span class="material-symbols-outlined card-icon" aria-hidden="true">visibility</span>
+            <h3 class="card-title">Computer Vision</h3>
+            <p class="muted" style="margin:0">Deep learning in image analysis including medical imaging (diabetic retinopathy, breast cancer), thermal imaging, and intelligent surveillance.</p>
+          </article>
+          <article class="card reveal">
+            <span class="material-symbols-outlined card-icon" aria-hidden="true">lock</span>
+            <h3 class="card-title">Blockchain &amp; Privacy</h3>
+            <p class="muted" style="margin:0">Privacy-preserving machine learning, secure data systems using blockchain and IPFS, and differential privacy frameworks.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <span class="footer-brand">Dr. Arvind Mewada</span>
+        <p class="footer-copy">&copy; 2026 Arvind Mewada &middot; AI, NLP &amp; Fake Review Detection</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="mailto:arvindmewada@nitc.ac.in">Email</a>
+        <a href="publications.html">Publications</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
